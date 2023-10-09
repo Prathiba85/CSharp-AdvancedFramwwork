@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "md9eyydOrhNbXEqMRrdPmg4obY4WUARvHokbNyh/TlUHVEf/nvqU+nnTb/QqD/e3+uYq4/Rq2BPfCx9wRjgbDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\sanpr\\source\\repos\\EaTestAutomation\\EaFrameWork\\EaFrameWork.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sanpr\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\sanpr\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\sanpr\\.nuget\\packages\\selenium.support\\4.13.1\\selenium.support.4.13.1.nupkg.sha512",
+    "C:\\Users\\sanpr\\.nuget\\packages\\selenium.webdriver\\4.13.1\\selenium.webdriver.4.13.1.nupkg.sha512",
+    "C:\\Users\\sanpr\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

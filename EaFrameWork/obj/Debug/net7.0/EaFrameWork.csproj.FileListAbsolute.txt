@@ -1,0 +1,15 @@
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\bin\Debug\net7.0\selenium-manager\linux\selenium-manager
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\bin\Debug\net7.0\selenium-manager\macos\selenium-manager
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\bin\Debug\net7.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\bin\Debug\net7.0\EaFrameWork.deps.json
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\bin\Debug\net7.0\EaFrameWork.dll
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\bin\Debug\net7.0\EaFrameWork.pdb
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\EaFrameWork.csproj.AssemblyReference.cache
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\EaFrameWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\EaFrameWork.AssemblyInfoInputs.cache
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\EaFrameWork.AssemblyInfo.cs
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\EaFrameWork.csproj.CoreCompileInputs.cache
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\EaFrameWork.dll
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\refint\EaFrameWork.dll
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\EaFrameWork.pdb
+C:\Users\sanpr\source\repos\EaTestAutomation\EaFrameWork\obj\Debug\net7.0\ref\EaFrameWork.dll
