@@ -1,51 +1,108 @@
-using EaFrameWork.Config;
-using EaFrameWork.Driver;
-using EaFrameWork.Pages;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using AutoFixture.Xunit2;
+using EaApplicaitonTest.Models;
+using EaApplicaitonTest.Pages;
 
 namespace EaApplicaitonTest
 {
-    public class UnitTest1 : IDisposable
+    public class UnitTest1 
     {
-        private IDriverFixture _driverFixture;
-       
-        public UnitTest1()
-        {
-            var testSettings = new TestSettings()
-            {
-                BrosweType = DriverFixture.BrowserType.Chrome,
-                ApplicaitonUrl = new Uri("http://localhost:33084/"),
-                TimeoutInterval = 30
-            };
-            _driverFixture = new DriverFixture(testSettings);
-        }
+        /*
+           private readonly IHomePage _homePage;
+           private readonly IProductPage _productPage;
+           public UnitTest1(IHomePage homePage,IProductPage productPage)
+           {
 
+
+               _homePage = homePage;
+               _productPage = productPage;
+
+           }
+           /*
+           [Theory]
+           [InlineData("FirstProduct2","description of product","200","CPU")]
+           [InlineData("FirstProduct3", "description of product", "200", "CPU")]
+           [InlineData("FirstProduct4", "description of product", "200", "CPU")]
+           public void Test1(string name,string description, string price,string productType)
+           {
+               //Create objects for page
+           var homePage = new HomePage(_driverFixture);
+             var  productpage = new ProductPage(_driverFixture);
+
+
+               //Click the create link
+               homePage.ClickProduct();
+
+               //Create Product
+
+               productpage.ClickCreateButton();
+               productpage.CreateProduct(name,description,price,productType);
+               productpage.PerformClickonSpecialValue(name, "Details");
+
+
+           }*/
+        /* Method without Autofixture
         [Fact]
-         public void Test1()
+        public void Test1()
         {
             //Create objects for page
-        var homePage = new HomePage(_driverFixture);
-          var  productpage = new ProductPage(_driverFixture);
-
-
+            var homePage = new HomePage(_driverFixture);
+            var productpage = new ProductPage(_driverFixture);
+            Product product = new Product()
+            {
+                Name = "NewProd",
+                Description = "New Product",
+                Price = 1000,
+                ProductType = ProductType.EXTERNAL
+            };
             //Click the create link
             homePage.ClickProduct();
 
             //Create Product
 
             productpage.ClickCreateButton();
-            productpage.CreateProduct("FirstProduct10","description of product","200","MONITOR");
-            productpage.PerformClickonSpecialValue("FirstProduct10", operation: "Details");
-         
-            
+            productpage.CreateProduct(product);
+            productpage.PerformClickonSpecialValue(product.Name, "Details");
+
+
         }
 
-        
-
-        public void Dispose()
+        [Theory]
+        [AutoData]
+        public void CreateProduct(Product product)
         {
-           _driverFixture.Driver.Quit();
+            
+            //Click the create link
+            _homePage.ClickProduct();
+
+            //Create Product
+
+            _productPage.ClickCreateButton();
+            _productPage.CreateProduct(product);
+            _productPage.PerformClickonSpecialValue(product.Name,"Details");
+
+
+        }*/
+        
+        private readonly IHomePage _homePage;
+        private readonly IProductPage _productPage;
+
+        public UnitTest1(IHomePage homePage, IProductPage productPage)
+        {
+            _homePage = homePage;
+            _productPage = productPage;
+        }
+
+        [Theory]
+        [AutoData]
+        public void CreateProduct(Product product)
+        {
+            //Click the Create link
+            _homePage.ClickProduct();
+
+            //Create product
+            _productPage.ClickCreateButton();
+            _productPage.CreateProduct(product);
+            _productPage.PerformClickonSpecialValue(product.Name, "Details");
         }
 
     }

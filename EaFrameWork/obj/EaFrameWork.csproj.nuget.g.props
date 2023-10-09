@@ -13,4 +13,7 @@
     <SourceRoot Include="C:\Users\sanpr\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgXunit_DependencyInjection Condition=" '$(PkgXunit_DependencyInjection)' == '' ">C:\Users\sanpr\.nuget\packages\xunit.dependencyinjection\8.9.0</PkgXunit_DependencyInjection>
+  </PropertyGroup>
 </Project>

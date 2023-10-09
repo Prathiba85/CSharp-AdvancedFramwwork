@@ -44,6 +44,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoFixture": {
+              "target": "Package",
+              "version": "[4.18.0, )"
+            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[4.13.1, )"
@@ -51,6 +55,10 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.13.1, )"
+            },
+            "Xunit.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.9.0, )"
             }
           },
           "imports": [
