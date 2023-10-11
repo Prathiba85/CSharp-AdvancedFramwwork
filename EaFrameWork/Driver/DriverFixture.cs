@@ -2,6 +2,8 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Safari;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +24,7 @@ namespace EaFrameWork.Driver
 
         {
             _testSettings = testSettings;
-            Driver = GetWebDriver();
+            Driver = _testSettings.TestRunType == TestRunType.Local ? GetWebDriver() : GetRemoteWebDriver();
             Driver.Navigate().GoToUrl(_testSettings.ApplicaitonUrl);
         }
         private WebDriver GetWebDriver()
@@ -35,6 +37,17 @@ namespace EaFrameWork.Driver
                 _ => new ChromeDriver(),
             };
 
+        }
+
+        private IWebDriver GetRemoteWebDriver()
+        {
+            return _testSettings.BrosweType switch
+            {
+                BrowserType.Chrome => new RemoteWebDriver(_testSettings.GridUri, new ChromeOptions()),
+                BrowserType.Firefox => new RemoteWebDriver(_testSettings.GridUri, new FirefoxOptions()),
+                BrowserType.Safari => new RemoteWebDriver(_testSettings.GridUri, new SafariOptions()),
+                _ => new RemoteWebDriver(_testSettings.GridUri, new ChromeOptions())
+            };
         }
 
         public void Dispose()

@@ -13,7 +13,15 @@ namespace EaFrameWork.Config
         public BrowserType BrosweType {get; set;}
         public Uri ApplicaitonUrl { get; set; }
         public float? TimeoutInterval { get; set; }
-
+        public TestRunType TestRunType { get; set; }
+        public Uri GridUri { get; set; }
 
     }
+    public enum TestRunType
+    {
+        Local,
+        Grid
+    }
+
+
 }

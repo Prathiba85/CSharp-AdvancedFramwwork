@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EaFrameWork", "EaFrameWork\EaFrameWork.csproj", "{876FC247-CFD2-4191-B604-FC84D9D82C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EaApplicaitonTest", "EaApplicaitonTest\EaApplicaitonTest.csproj", "{A96B5E0C-4985-4ED3-8211-15DAA802FD16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EaApplicaitonTest", "EaApplicaitonTest\EaApplicaitonTest.csproj", "{A96B5E0C-4985-4ED3-8211-15DAA802FD16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EaSpecflowTests", "EaSpecflowTests\EaSpecflowTests.csproj", "{FE037F15-AEBC-495E-9509-335EF68DCD6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A96B5E0C-4985-4ED3-8211-15DAA802FD16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A96B5E0C-4985-4ED3-8211-15DAA802FD16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A96B5E0C-4985-4ED3-8211-15DAA802FD16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE037F15-AEBC-495E-9509-335EF68DCD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE037F15-AEBC-495E-9509-335EF68DCD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE037F15-AEBC-495E-9509-335EF68DCD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE037F15-AEBC-495E-9509-335EF68DCD6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
